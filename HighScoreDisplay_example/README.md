@@ -6,5 +6,5 @@ Learn more about scripting from the ![Spark AR Scripting Course](https://sparkar
 
 
 Make sure to add the FromScript and ToScript script variables when importing the script and block to a new file
-![Alt text](./screenshot1.png)
-![Alt text](./screenshot1.png)
+![screen](./screenshot1.png)
+![screen](./screenshot2.png)
