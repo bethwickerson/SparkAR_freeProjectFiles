@@ -20,8 +20,11 @@ const Persistence = require('Persistence');
   let updatedScoreText = "THANKS FOR PLAYING!";
   Patches.inputs.setString('TIMEUP_MESSAGE', updatedScoreText);
 
+ // Store a reference to the local storage location
+  const localStorage = Persistence.local;
+
   try {
-    highScore = await Persistence.userScope.get("highScore");
+    highScore = await localStorage.get('highScore');
 
     if (highScore) {
       Diagnostics.log("Saved High Score: " + highScore.value);
